@@ -1,5 +1,12 @@
 # AI Code Review Agent
 
+## Overview
+
+A code review agent exercise that flags `latest` tags in posted diffs. Diffs are sent to `POST /agent/run` and the agent reports what it finds, but any request to merge is refused. A `/v1` ops API adds workspaces, tenant isolation, job approval and audit records, with tests for both the agent and the ops API.
+
+- **Built with:** Python, pytest, Docker, Docker Compose, GitHub Actions
+- **Scope:** Local laptop proof with tests; it calls no hosted model and never merges code.
+
 <!-- project-guide:start -->
 ## Project guide
 
